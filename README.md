@@ -39,7 +39,7 @@ select substring(path from 10) as slug, id
 from log
 where path like '/article/%';
 ```
-<br />
+
 ```
 create view dailyErrorLog as
 select time::date as date, count(*) as error

@@ -32,7 +32,7 @@ They are deleted in the end of python code.
 Users do not need to recreate them.
 <br />
 Here are ```create view``` the statements.
-<br />
+
 ```
 create view alog as
 select substring(path from 10) as slug, id
@@ -47,7 +47,7 @@ from log
 where status NOT Like '%OK'
 group by date;
 ```
-<br />
+
 ```
 create view dailyLog as
 select time::date as date, count(*) as total
